@@ -12,7 +12,7 @@ import { UsersModule } from 'src/users/users.module';
     UsersModule,
     PassportModule, // Importa o PassportModule
     JwtModule.register({
-      secret: 'minha_senha_super_secreta',
+      secret: process.env.JWT_SECRET,
       signOptions: { expiresIn: '1h' },
     }),
   ],
