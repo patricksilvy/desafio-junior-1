@@ -11,7 +11,7 @@ async function bootstrap() {
   app.use(helmet());
 
   app.enableCors({
-    origin: "https://softpet2.vercel.app/",
+    origin: "*",
   });
 
   await app.listen(process.env.PORT ?? 3000);
