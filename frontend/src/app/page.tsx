@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchPets() {
       try {
-        const response = await fetch('https://softpet-production.up.railway.app/pet/list'); // substitua pela URL da sua API
+        const response = await fetch('https://softpet-production.up.railway.app/pet/list');
         if (!response.ok) {
           throw new Error('Erro ao buscar os pets');
         }
