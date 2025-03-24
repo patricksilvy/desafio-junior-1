@@ -45,7 +45,7 @@ export default function PetCard({ pet, openModal, toggleModal }: PetCardProps) {
 
           <div className="flex items-center gap-2">
             <LuUser size={22} color="#FFF" />
-            <p className="text-white text-lg">{pet.ownerName}</p>
+            <p className="text-white text-lg">{pet.owner}</p>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ export default function PetCard({ pet, openModal, toggleModal }: PetCardProps) {
                   height={14}
               />
           </div>
-            <p className="text-white">Telefone: {pet.phone}</p>
+            <p className="text-white">Telefone: {pet.phoneNumber}</p>
           </div>
           <div className="flex items-center gap-1 mb-4">
             <div className="flex items-center w-5">

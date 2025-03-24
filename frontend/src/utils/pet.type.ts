@@ -4,6 +4,6 @@ export interface PetProps {
     birthDate: string;
     type: string;
     race: string;
-    ownerName: string;
-    phone: string;
+    owner: string;
+    phoneNumber: string;
   }
